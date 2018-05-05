@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head></h:head>
+        <h:body>
+            <div align="center">
+                <h:form>
+                    <table cellspacing="2" cellpadding="3" border="0" width="100%">
+                        <tr>
+                            <td>
+                                <h:outputText value="#{sessionScope.splyzeException}" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h:commandButton value="Ok"
+                                    action="#{backing_showexception.ok_action}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </h:form>
+            </div>
+        </h:body>
+    </html>
+    <!--oracle-jdev-comment:preferred-managed-bean-name:backing_showexception-->
+</f:view>

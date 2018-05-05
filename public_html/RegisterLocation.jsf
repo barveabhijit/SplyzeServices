@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>Register Location</title>
+        </h:head>
+        <h:body>
+            <div align="center">
+                <strong>
+                    <h:outputText value="Please enter the details for new location."/></strong>
+                 
+                <h:form binding="#{backing_registerlocation.location_entry_form}" id="location_entry_form">
+                    <table cellspacing="2" cellpadding="3" border="0" width="65%">
+                        <tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Name:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.name}" id="name"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Address Line 1:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.address_line_1}" id="address_line_1"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Address Line 2:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.address_line_2}" id="address_line_2"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="City:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.city}" id="city"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="State:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.state}" id="state"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Zip/ Postal Code:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.zip_postal_code}"
+                                             id="zip_postal_code"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Country:"/>
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.country}" id="country"/>
+                            </td>
+                        </tr><tr>
+                            <td width="34%">
+                                <div align="left">
+                                    <h:outputText value="Number of Areas/ Sections/ Floors that this location is broken into:"/> 
+                                </div>
+                            </td>
+                            <td width="66%">
+                                <h:inputText binding="#{backing_registerlocation.num_areas}" id="num_areas"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <h:commandButton value="Next" binding="#{backing_registerlocation.location_next}"
+                                     id="location_next" action="#{backing_registerlocation.location_next_action}"/>
+                    <h:commandButton value="Cancel" binding="#{backing_registerlocation.cancel}"
+                                     id="cancel" action="#{backing_registerlocation.cancel_action}"/>
+                </h:form>
+            </div>
+        </h:body>
+    </html>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_registerlocation-->
+</f:view>

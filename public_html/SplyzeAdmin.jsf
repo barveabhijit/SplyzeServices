@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>SplyzeAdmin</title>
+        </h:head>
+        <h:body>
+            <h:form binding="#{backing_splyzeadmin.form1}" id="form1">
+                <div align="center">
+                    <h:commandButton value="Register a New Event" binding="#{backing_splyzeadmin.registerEvent}"
+                                     id="registerEvent" action="#{backing_splyzeadmin.registerEvent_action}"/>
+                </div>
+                <div align="center">
+                    <br/><h:commandButton value="Register a new Location"
+                                          binding="#{backing_splyzeadmin.registerLocation}" id="registerLocation"
+                                          action="#{backing_splyzeadmin.registerLocation_action}"/>
+                </div>
+            </h:form>
+        </h:body>
+    </html>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:backing_splyzeadmin-->
+</f:view>

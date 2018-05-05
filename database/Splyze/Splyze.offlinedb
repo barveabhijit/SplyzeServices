@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="sourceKey" v="oracle.javatools.db.sqlite.SQLiteDatabaseImpl"/>
+   </hash>
+   <value n="id" v="c2b52775-76f7-4732-9e39-57dd57351634"/>
+   <value n="name" v="Splyze"/>
+</ProviderSettings>
